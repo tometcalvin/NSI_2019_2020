@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* --------------------------  Header  ----------------------------- */
+
+header {
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.733);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+header div {
+    width: 75%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header div h2 {
+    color: darkslateblue;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
+
+a.logo {
+    margin-right: 30px;
+    height: 70px;
+    width: 70px;
+}
+
+
+
+/* ----------------------- Body ----------------------------- */
+
+/*    ------------------ Section 1 ----------------------   */
+
+h2 {
+    text-align: left;
+}
+
+p.present {
+    font-size: 20px;
+}
+
+section.present {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+
+section.present div {
+    margin-left: 100px;
+}
+
+div h1 {
+    font-size: 50px;
+    color: darkslateblue;
+}
+
+div p {
+    font-size: 40px;
+}
+
+
+section.loc {
+    height: 600px;
+    background: whitesmoke;
+}
+
+div.imgsect1 {
+    display: flex;
+    margin-right: 100px;
+}
+
+hr.sect1 {
+    border: 1px solid darkslateblue;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img.first {
+    height: 300px;
+    width: 300px;
+    filter: drop-shadow(5px 10px 5px rgb(83, 83, 83));
+}
+
+img.first2 {
+    height: 300px;
+    width: 300px;
+    filter: drop-shadow(5px 10px 5px rgb(83, 83, 83));
+}
+
+
+/*    ------------------ Section 2 ----------------------   */
+
+div.title {
+    width: 100%;
+    text-align: center;
+}
+
+h1.sect1 {
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+hr.title {
+    border: 3px solid rgb(214, 196, 28);
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div.map {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.local {
+    font-size: 25px;
+}
+
+div.internmap {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+img.map {
+    height: 400px;
+    width: 400px;
+}
+
+/*    ------------------ Section 3 ----------------------   */
+
+div.fonct {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+h3 {
+    color: rgb(46, 46, 46);
+    font-size: 22px;
+}
+
+div.grid {
+    display: block;
+    text-align: center;
+    width: 350px;
+}
+
+div.grid img {
+    height: 170px;
+    width: 170px;
+}
+
+div.fonct div.grid h3.date {
+    color: rgb(214, 196, 28);
+    font-size: 30px;
+}
+
+div.fonct div.grid p {
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+
+/*    ------------------ Section 4 ----------------------   */
+
+section.join {
+    background: darkslateblue;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.joinus {
+    color: white;
+}
+
+h2.joinus {
+    color: whitesmoke;
+}
+
+
+section.join img {
+    padding: 10px;
+    height: 400px;
+    width: 550px;
+    filter: drop-shadow(0 0 5px rgb(83, 83, 83));
+    border-radius: 40px;
+}
+
+/* ------------------ Quizz ---------------------- */
+
+section.questions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.title {
+  width: 100%;
+  text-align: center;
+}
+
+hr.quizz {
+  width: 50px;
+  border: 2px solid rgb(255,232,0);
+}
+
+div.q1 {
+  width: 100%;
+  text-align: center;
+}
+
+div.q2 {
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  background-color: rgb(255,184,0);
+  border: none;
+  color: white;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+input.verif:hover {
+  background-color: rgb(255,175,0);
+}
+
+div.form {
+  width: 150px;
+  display: block;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 60px;
+}
+
+/*    ------------------ Footer ----------------------   */
+
+footer {
+    height: 130px;
+    background: rgb(51, 44, 99);
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+div.navfoot {
+    margin-top: -20px;
+    height: 30px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+}
