@@ -1,45 +1,115 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="quizz.css">
-    <script type="text/javascript" src="quizz.js"></script>
-    <title>Quizz NSI 2019-2020</title>
-  </head>
-  <body>
-    <header>
-      <div class="head">
-        <h1>NSI 2019-2020</h1>
-      </div>
-    </header>
-    <div class="title">
-      <h2>QCM</h2>
-    </div>
-    <section>
-      <div class="q1">
-        <h4>Question 1 :</h4>
-        <hr>
-        <p>Quel est le composant essentiel d'un ordinateur ?</p>
-        <form name="qcm1" class="ques1" action="index.html" onsubmit="choixqcm1(document)" method="post">
-          <input type="radio" name="choix" value="clavier">Clavier</input><br>
-          <input type="radio" name="choix" value="led">Led</input><br>
-          <input type="radio" name="choix" value="condens">Condensateur</input><br>
-          <input type="radio" name="choix" value="transis">Transistor</input><br>
-          <input type="submit" name="submit" value="Vérifier">
-        </form>
-      </div>
-      <div class="q2">
-        <h4>Question 2 :</h4>
-        <hr>
-        <p>En quelle année Intel met au point le premier <br> microprocesseur 4004 ?</p>
-        <form name="qcm2" class="ques2" action="index.html" onsubmit="choixqcm2(document)" method="post">
-          <input type="radio" name="choix" value="1943">1943</input><br>
-          <input type="radio" name="choix" value="1960">1960</input><br>
-          <input type="radio" name="choix" value="1971">1971</input><br>
-          <input type="radio" name="choix" value="1980">1980</input><br>
-          <input type="submit" name="submit" value="Vérifier">
-        </form>
-      </div>
-    </section>
-  </body>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les Bases de Données</title>
+        <link rel="stylesheet" href="css/index.css">
+        <meta name="author" content="Tom Zvara">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="quizz.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html" class="logo"><img src="img/server.png" alt="Database" height="50" width="50"></a>
+                <h2>Les Bases de Données</h2>
+            </div>
+        </header>
+        <section class="present">
+            <div class="text">
+                <h1>Qu'est ce que c'est ?</h1>
+                <p class="present">Une base de données est un « conteneur » stockant des données telles que des chiffres, des dates ou des mots, pouvant être retraités par des moyens informatiques pour produire une information. 
+                </br>
+                <p class="present">C'est la pièce centrale d'un système d'information ou d'un système de base de données, qui régit la collecte, le stockage, le retraitement et l'utilisation de données. Ce dispositif comporte un logiciel moteur et un ensemble de règles relatives à l'accès et l'utilisation des informations.</p>
+            </div>
+            <div class="imgsect1">
+                <img src="img/server.png" alt="Server" class="first">
+                <hr class="sect1">
+                <img src="img/databases.png" alt="Databases" class="first2">
+            </div>
+        </section>
+        <section class="loc">
+            <div class="title">
+                <h1 class="sect1">Dans quels cas l'utiliser ?</h1>
+                <hr class="title">
+            </div>
+            <div class="map">
+                <div class="internmap">
+                    <p class="local">Une Base de Données est utilisée pour :</p>
+                    <ul class="list">
+                        <li class="local">◇  Gérer des utilisateurs</li>
+                        <li class="local">◇  Répertorier des articles sur un blog</li>
+                        <li class="local">◇  Créer un forum</li>
+                        <li class="local">   Etc...</li>
+                    </ul>
+                </div>
+                <img src="img/database-5.png" alt="Uses" class="map">
+            </div>
+        </section>
+        <section class="fonct">
+            <div class="title">
+                <h1 class="sect1">Un peu d'Histoire !</h1>
+                <hr class="title">
+            </div>
+            <div class="fonct">
+                <div class="grid">
+                    <img src="img/database-2.png" alt="Disque Dur">
+                    <h3 class="date"><strong>1956</strong></h3>
+                    <h3><strong>Invention des Disques Durs</strong></h1>
+                    <p>L'invention du disque dur a permis d'utiliser les ordinateurs pour collecter, classer et stocker de grandes quantités d'informations de façon plus souple et plus performante que le support antérieur : la bande magnétique.</p>
+                </div>
+                <div class="grid">
+                    <img src="img/database-4.png" alt="Database">
+                    <h3 class="date"><strong>1960</strong></h3>
+                    <h3><strong>Première Bases de Données Hiérarchiques</strong></h1>
+                    <p>Les informations étaient découpées en deux niveaux de hiérarchie.</br>Le découpage a ensuite été étendu pour prendre la forme d'un diagramme en arbre.</p>
+                </div>
+                <div class="grid">
+                    <img src="img/database-3.png" alt="Hierarchie">
+                    <h3 class="date"><strong>1964</strong></h3>
+                    <h3><strong>Création du mot "Database"</strong></h1>
+                    <p>Il est apparu pour désigner une collection d'informations partagées par différents utilisateurs d'un système d'informations militaire.</p>
+                </div>
+            </div>
+        </section>
+        <section class="join">
+            <div class="text">
+                <h1 class="joinus">Comment utiliser une Base de Donnée ?</h1>
+                <h2 class="joinus">Pour cela, il existe des logiciels tels que MySQL,</br>Oracle Database et d'autres encore...</h2>
+            </div>
+            <img src="img/mysql-logo-circle-png.jpg" alt="Badge">
+        </section>
+        <section class="questions">
+            <div class="q1">
+              <h4>Question 1 :</h4>
+              <hr class="quizz">
+              <p>Le rangement d'une BDD est un rangement en :</p>
+              <form name="qcm1" class="ques1" action="index.html" onsubmit="choixqcm1(document)" method="post">
+                <input type="radio" name="choix" value="boite">Boites</input><br>
+                <input type="radio" name="choix" value="suite">Suite Logique</input><br>
+                <input type="radio" name="choix" value="caté">Catégories</input><br>
+                <input type="radio" name="choix" value="arbor">Arborescence</input><br>
+                <input type="submit" name="submit" value="Vérifier">
+              </form>
+            </div>
+            <div class="q2">
+              <h4>Question 2 :</h4>
+              <hr class="quizz">
+              <p>Avec quel langage de programmation<br>utilise-t-on une base de données ?</p>
+              <form name="qcm2" class="ques2" action="index.html" onsubmit="choixqcm2(document)" method="post">
+                <input type="radio" name="choix" value="js">JavaScript</input><br>
+                <input type="radio" name="choix" value="hph">HPH</input><br>
+                <input type="radio" name="choix" value="php">PHP</input><br>
+                <input type="radio" name="choix" value="angular">Angular</input><br>
+                <input type="submit" name="submit" value="Vérifier">
+              </form>
+            </div>
+          </section>
+        <footer>
+            <div class="navfoot">
+            </div>
+            <h5>Fait avec ♥ pour la NSI par Tom Zvara © 2019-2020</h5>
+        </footer>
+    </body>
 </html>
